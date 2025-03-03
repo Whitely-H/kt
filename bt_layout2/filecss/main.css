@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+header{
+    height: 100px;
+    line-height: 100px;
+    background-color: #ff9600;
+    display: flex;
+}
+.logo{
+    flex: 1;
+
+}
+.search{
+    flex: 1;
+}
+header .search input[type=text]{
+    background-color: #ff9600;
+    border: 1px solid white;
+    padding-left: 5px;
+}
+header .search input[type=submit]{
+    background-color: white;
+    color: #ff9600;
+    border: 1px solid white;
+    padding: 0 5px;
+    margin-left: -5px;
+}
+.buy{
+    flex: 1;
+    background-image: url(/anh/cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header .buy span{
+    color: white;
+    display: inline-block;
+    float: left;
+    margin-left: 55px;
+}
+.wrap{
+    display: flex;
+
+}
+aside{
+    flex: 1;
+    margin-left: 40px;
+}
+aside p{
+    height: 30px;
+    line-height: 30px;
+    background-color: #d0d0d0;
+    text-transform: uppercase;
+    padding-left: 4px;
+    margin-top: 10px;
+}
+aside ul{
+    border: 1px solid #c0c0c0;
+    list-style: none;
+}
+aside li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #c0c0c0;
+    margin: 0 10px;
+    padding-left: 10px;
+}
+aside li:last-child{
+    border-bottom: none;
+}
+aside a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+aside .bannerleft{
+    margin-top: 10px;
+}
+article{
+    flex: 4;
+    margin-left: 10px;
+}
+article .products{
+    display: flex;
+    flex-wrap: wrap;
+}
+article >p{
+    height: 30px;
+    line-height: 30px;
+    color: #ff9600;
+    text-transform: uppercase;
+}
+article .product{
+    text-align: center;
+    width: 200px;
+    border: 1px solid #c0c0c0;
+}
+footer{
+    background-color: #ff9600;
+    display: flex;
+}
+@media (max-width:600px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:768px) and (min-width:600px)
